@@ -67,7 +67,7 @@ const FilterSidebar = (props:FilterSidebarProps) => {
   const ref_ratingEls = useRef<HTMLInputElement[]>([])
   const ref_brandEls = useRef<HTMLInputElement[]>([])
   const ref_colorEls = useRef<HTMLInputElement[]>([])
-  
+
 
   useEffect(()=>{
     const colors = new Set(constantList.map((product:ProductProps )=> product.color))
@@ -461,7 +461,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
                     type="radio" 
                     name="type" 
                     value={type} 
-                    ref={(el:HTMLInputElement) => (ref_typeEls.current[index] = el)}
+                    ref={(el:any) => (ref_typeEls.current[index] = el)}
                     />
                   <span>{selectedValue.slice(0,-1)} a {type}</span>
                 </label>
@@ -508,7 +508,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
                     name="brand" 
                     value={brand}
                     data-values={brandValues}
-                    ref={(el:HTMLInputElement) => (ref_brandEls.current[index] = el)}
+                    ref={(el:any) => (ref_brandEls.current[index] = el)}
                     />
                   <span>{brand[0].toUpperCase()}{brand.slice(1)}</span>
                 </label>
@@ -557,7 +557,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
                   id="premium_offer"
                   name="premium_offer"
                   value="premium_offer"
-                  ref={(el:HTMLInputElement) => (ref_premium_offer.current[0] = el)}
+                  ref={(el:any) => (ref_premium_offer.current[0] = el)}
                 />
                 <span className={`label__sub-title ml-1`}>
                   Enabled in Premium          
@@ -571,7 +571,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
                   id="free_delivery"
                   name="free_delivery"
                   value="free_delivery"
-                  ref={(el:HTMLInputElement) => (ref_free_delivery.current[0] = el)}
+                  ref={(el:any) => (ref_free_delivery.current[0] = el)}
                 />
                 <span className={`label__sub-title ml-2`}>
                   Free delivery
@@ -584,7 +584,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
                   id="to_home"
                   name="to_home"
                   value="to_home"
-                  ref={(el:HTMLInputElement) => (ref_to_home.current[0] = el)}
+                  ref={(el:any) => (ref_to_home.current[0] = el)}
                 />
                 <span className={`label__sub-title ml-2`}>
                   Git it to Home
@@ -672,7 +672,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
                     type="radio" 
                     name="color" 
                     value={color}
-                    ref={(el:HTMLInputElement) => (ref_colorEls.current[index] = el)}
+                    ref={(el:any) => (ref_colorEls.current[index] = el)}
                     />
                   <span>{color}</span>
                 </label>
@@ -718,7 +718,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
               name="avgRating"
               value="5"
               data-values={ratingValues}
-              ref={(el:HTMLInputElement) => (ref_ratingEls.current[5] = el)}
+              ref={(el:any) => (ref_ratingEls.current[5] = el)}
             />
             <span>
               <FontAwesomeIcon icon={faStar} />
@@ -737,7 +737,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
               name="avgRating"
               value="4"
               data-values={ratingValues}
-              ref={(el:HTMLInputElement) => (ref_ratingEls.current[4] = el)}
+              ref={(el:any) => (ref_ratingEls.current[4] = el)}
             />
             <span> 
               <FontAwesomeIcon icon={faStar}  />
@@ -756,7 +756,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
               name="avgRating"
               value="3"
               data-values={ratingValues}
-              ref={(el:HTMLInputElement) => (ref_ratingEls.current[3] = el)}
+              ref={(el:any) => (ref_ratingEls.current[3] = el)}
             />
             <span> 
               <FontAwesomeIcon icon={faStar} />
@@ -775,7 +775,7 @@ const handleUnCheckInput = (filter:FilterInputProps)=>{
               name="avgRating"
               value="2"
               data-values={ratingValues}
-              ref={(el:HTMLInputElement) => (ref_ratingEls.current[2] = el)}
+              ref={(el:any) => (ref_ratingEls.current[2] = el)}
             />
             <span> 
               <FontAwesomeIcon icon={faStar} />
