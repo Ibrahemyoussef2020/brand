@@ -30,5 +30,10 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "typescript": "^5"
-  }
+  },
+  "eslintConfig": {
+    "rules": {
+        "jsx-a11y/accessible-emoji": "off"
+    }
+}
 }
