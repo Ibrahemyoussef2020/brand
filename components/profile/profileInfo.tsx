@@ -42,7 +42,7 @@ const ProfileInfo = () => {
                 </div>
             </div>
             <div className='desc'>
-                Hi there, I'M Ibrahim Youssef ,
+                Hi there, I am Ibrahim Youssef ,
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, placeat distinctio? Necessitatibus, incidunt placeat esse vel accusantium dolor libero voluptates, explicabo eveniet, culpa aut voluptate quod.
             </div>
             <Link href='/' className='btn'>Back to home</Link>

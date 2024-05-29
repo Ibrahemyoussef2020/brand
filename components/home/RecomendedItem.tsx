@@ -17,7 +17,7 @@ const recomendedItems = await fetchProductsToServer('recomended-items');
         <div>
             {
                 recomendedItems?.map((recomendedItem:ProductProps )=> {
-                    return <article>
+                    return <article key={recomendedItem.id}>
                         <div className='broweserd-product'>
                             <div className='img-wrapper'>
                                 <Image
@@ -31,7 +31,7 @@ const recomendedItems = await fetchProductsToServer('recomended-items');
                             <p>
                                 ${recomendedItem.price} 
                             </p>
-                            <h3>{recomendedItem.title}, it's perfect offer.</h3>
+                            <h3>{recomendedItem.title}, it is perfect offer.</h3>
                             <BrowserProduct section='recomended-items' productId='' />
                         </div>
                     </article>
