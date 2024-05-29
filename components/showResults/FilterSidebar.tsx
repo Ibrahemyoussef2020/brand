@@ -68,6 +68,8 @@ const FilterSidebar = (props:FilterSidebarProps) => {
   const ref_brandEls = useRef<HTMLInputElement[]>([])
   const ref_colorEls = useRef<HTMLInputElement[]>([])
 
+  
+  
 
   useEffect(()=>{
     const colors = new Set(constantList.map((product:ProductProps )=> product.color))
