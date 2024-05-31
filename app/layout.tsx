@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en"> 
       <body>
         <ProvidersWrapper>
-          <div className={roboto.className}>
+          <div>
             {children}
             <Footer />
           </div>
